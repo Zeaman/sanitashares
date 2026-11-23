@@ -18,13 +18,13 @@ dpkg --print-architecture
 ## 2. Install on Jetson / ARM64
 
 ```bash
-sudo apt install ./sanitashares_0.1.0_arm64.deb
+sudo apt install --reinstall ./sanitashares_0.1.0_arm64.deb
 ```
 
 ## 3. Install on Ubuntu PC (Intel / AMD)
 
 ```bash
-sudo apt install ./sanitashares_0.1.0_amd64.deb
+sudo apt install --reinstall ./sanitashares_0.1.0_amd64.deb
 ```
 
 ## 4. Open
