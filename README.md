@@ -11,8 +11,8 @@ These installers are **`.deb` files** (Debian/Ubuntu packages). Apt cannot insta
 
 | Computer | Installer |
 |---|---|
-| Jetson Orin Nano / other ARM64 Ubuntu | `sanitashares_0.1.0_arm64.deb` |
-| Regular Ubuntu PC (Intel / AMD) | `sanitashares_0.1.0_amd64.deb` |
+| Jetson Orin Nano / other ARM64 Ubuntu | `sanitashares_0.1.1_arm64.deb` |
+| Regular Ubuntu PC (Intel / AMD) | `sanitashares_0.1.1_amd64.deb` |
 
 ## Which file?
 
@@ -25,13 +25,13 @@ dpkg --print-architecture
 ## Install on Jetson / ARM64
 
 ```bash
-sudo apt install ./sanitashares_0.1.0_arm64.deb
+sudo apt install ./sanitashares_0.1.1_arm64.deb
 ```
 
 ## Install on Ubuntu PC (Intel / AMD)
 
 ```bash
-sudo apt install ./sanitashares_0.1.0_amd64.deb
+sudo apt install ./sanitashares_0.1.1_amd64.deb
 ```
 
 ## Open
@@ -54,6 +54,12 @@ systemctl --user enable --now ufshared.service
 
 ```bash
 ufshare
+```
+
+## Remove
+
+```bash
+sudo apt remove --purge sanitashares ufshare
 ```
 
 Works on Ubuntu 20.04, 22.04, and 24.04.
