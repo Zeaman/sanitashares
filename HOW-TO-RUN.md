@@ -1,4 +1,4 @@
-# How to install Sanita-share 0.1.1
+# How to install Sanita-share 0.1.0
 
 Publisher: **YomTech Solutions (Amanuel Mihiret)**  
 Copyright © 2026 YomTech Solutions  
@@ -12,19 +12,19 @@ dpkg --print-architecture
 
 | Result | File |
 |---|---|
-| `arm64` | `sanitashares_0.1.1_arm64.deb` (Jetson Orin Nano and other ARM Ubuntu) |
-| `amd64` | `sanitashares_0.1.1_amd64.deb` (ordinary Ubuntu PC / laptop) |
+| `arm64` | `sanitashares_0.1.0_arm64.deb` (Jetson Orin Nano and other ARM Ubuntu) |
+| `amd64` | `sanitashares_0.1.0_amd64.deb` (ordinary Ubuntu PC / laptop) |
 
 ## 2. Install on Jetson / ARM64
 
 ```bash
-sudo apt install ./sanitashares_0.1.1_arm64.deb
+sudo apt install ./sanitashares_0.1.0_arm64.deb
 ```
 
 ## 3. Install on Ubuntu PC (Intel / AMD)
 
 ```bash
-sudo apt install ./sanitashares_0.1.1_amd64.deb
+sudo apt install ./sanitashares_0.1.0_amd64.deb
 ```
 
 ## 4. Open
