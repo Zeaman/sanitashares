@@ -15,21 +15,27 @@ dpkg --print-architecture
 | `arm64` | `sanitashares_0.1.0_arm64.deb` (Jetson Orin Nano and other ARM Ubuntu) |
 | `amd64` | `sanitashares_0.1.0_amd64.deb` (ordinary Ubuntu PC / laptop) |
 
-## 2. Install
+## 2. Remove an older install
 
-In the folder that contains the `.deb`:
+```bash
+sudo apt remove --purge ufshare sanitshare sanitashares
+```
+
+## 3. Install
+
+Jetson / ARM64:
 
 ```bash
 sudo apt install ./sanitashares_0.1.0_arm64.deb
 ```
 
-or
+Ubuntu PC (Intel / AMD):
 
 ```bash
 sudo apt install ./sanitashares_0.1.0_amd64.deb
 ```
 
-## 3. Open
+## 4. Open
 
 ```bash
 ufshare
@@ -37,12 +43,16 @@ ufshare
 
 or double-click **Sanita-share** in the applications menu.
 
-The window title is **Sanita-share**. The line under it is **Ubuntu File Share**.
-
-If the window does not open, start the background service once:
+If the window does not open:
 
 ```bash
 systemctl --user daemon-reload
+```
+
+```bash
 systemctl --user enable --now ufshared.service
+```
+
+```bash
 ufshare
 ```

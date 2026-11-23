@@ -7,40 +7,60 @@ License: MIT (see `LICENSE` and `copyright`)
 Email: yomtech44@gmail.com · Telegram: [@YomTech44](https://t.me/YomTech44)  
 Downloads: https://github.com/Zeaman/sanitashares/releases/latest
 
-These installers are **`.deb` files** (Debian/Ubuntu packages). Apt cannot install a `.db` file.
+These installers are **`.deb` files** (Debian/Ubuntu packages). Apt cannot install a `.db` file. Use `./` so apt reads the file in the current folder.
 
 | Computer | Installer |
 |---|---|
 | Jetson Orin Nano / other ARM64 Ubuntu | `sanitashares_0.1.0_arm64.deb` |
 | Regular Ubuntu PC (Intel / AMD) | `sanitashares_0.1.0_amd64.deb` |
 
-Check your computer first:
+## Which file?
 
 ```bash
 dpkg --print-architecture
 ```
 
-`arm64` → use the Jetson/ARM file. `amd64` → use the PC file.
+`arm64` → Jetson / ARM file. `amd64` → Ubuntu PC file.
 
-## Install, then open
-
-Copy the matching `.deb` onto the Ubuntu machine, open a terminal in that folder, and run **one** of:
+## Remove an older install
 
 ```bash
-# Jetson / ARM64
-sudo apt install ./sanitashares_0.1.0_arm64.deb
+sudo apt remove --purge ufshare sanitshare sanitashares
+```
 
-# Ubuntu PC (Intel/AMD)
+## Install on Jetson / ARM64
+
+```bash
+sudo apt install ./sanitashares_0.1.0_arm64.deb
+```
+
+## Install on Ubuntu PC (Intel / AMD)
+
+```bash
 sudo apt install ./sanitashares_0.1.0_amd64.deb
 ```
 
-The `./` is required. Then open the app:
+## Open
 
 ```bash
 ufshare
 ```
 
 Or search the app menu for **Sanita-share** and double-click it.
+
+If the window does not open:
+
+```bash
+systemctl --user daemon-reload
+```
+
+```bash
+systemctl --user enable --now ufshared.service
+```
+
+```bash
+ufshare
+```
 
 Works on Ubuntu 20.04, 22.04, and 24.04.
 
