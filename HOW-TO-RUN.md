@@ -15,21 +15,13 @@ dpkg --print-architecture
 | `arm64` | `sanitashares_0.1.0_arm64.deb` (Jetson Orin Nano and other ARM Ubuntu) |
 | `amd64` | `sanitashares_0.1.0_amd64.deb` (ordinary Ubuntu PC / laptop) |
 
-## 2. Remove an older install
-
-```bash
-sudo apt remove --purge ufshare sanitshare sanitashares
-```
-
-## 3. Install
-
-Jetson / ARM64:
+## 2. Install on Jetson / ARM64
 
 ```bash
 sudo apt install ./sanitashares_0.1.0_arm64.deb
 ```
 
-Ubuntu PC (Intel / AMD):
+## 3. Install on Ubuntu PC (Intel / AMD)
 
 ```bash
 sudo apt install ./sanitashares_0.1.0_amd64.deb

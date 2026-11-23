@@ -22,12 +22,6 @@ dpkg --print-architecture
 
 `arm64` → Jetson / ARM file. `amd64` → Ubuntu PC file.
 
-## Remove an older install
-
-```bash
-sudo apt remove --purge ufshare sanitshare sanitashares
-```
-
 ## Install on Jetson / ARM64
 
 ```bash
