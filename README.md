@@ -1,6 +1,6 @@
 # Sanita-share (Ubuntu File Share)
 
-Direct device-to-device file sharing for **every Ubuntu machine**: PCs, laptops, and NVIDIA Jetson. No account. No cloud. Transfers stay on your local Wi-Fi or Ethernet. Home is two rows: **SEND** and **RECEIVE**, then **TEXT** (two-way notes on the same session). Settings include English/Amharic and Light/Dark theme.
+Direct device-to-device file sharing for **every Ubuntu machine**: PCs, laptops, and NVIDIA Jetson. No account. No cloud. Transfers stay on your local Wi-Fi or Ethernet. Home is two rows: **SEND** and **RECEIVE**, then **TEXT** (Connect, then live notes). Settings include English/Amharic and Light/Dark theme.
 
 Copyright © 2026 **YomTech Solutions (Amanuel Mihiret)**  
 License: MIT (see `LICENSE` and `copyright`)  

@@ -35,7 +35,7 @@ The installer stops any old hidden Sanita-share window. Then:
 ufshare
 ```
 
-or double-click **Sanita-share** in the applications menu. Home is two rows: **SEND** and **RECEIVE** on the first row, **TEXT** under SEND on the second. SEND has two boxes (**Drop files here** and **Select folder to send**) plus a green **Select files** button. TEXT waits for another machine on TEXT, then shows a scrollable **Send Text** box and a **Receive Text** box with a copy icon. Nearby devices show as chips; **QR** shows the LAN address. Closing the window keeps receiving from the tray. Language (ENGLISH / AMHARIC) and theme (Light / Dark icon buttons) are under the gear.
+or double-click **Sanita-share** in the applications menu. Home is two rows: **SEND** and **RECEIVE** on the first row, **TEXT** under SEND on the second. SEND has two boxes (**Drop files here** and **Select folder to send**) plus a green **Select files** button. TEXT has Connect. After both machines connect, typing in Send Text appears live in the other Receive Text box. Nearby devices show as chips; **QR** shows the LAN address. Closing the window keeps receiving from the tray. Language (ENGLISH / AMHARIC) and theme (Light / Dark icon buttons) are under the gear.
 
 If the window does not open:
 
