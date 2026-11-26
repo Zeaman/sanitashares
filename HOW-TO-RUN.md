@@ -64,3 +64,11 @@ or `ufshare firewall` and approve the password prompt.
 ```bash
 sudo apt remove --purge sanitashares ufshare
 ```
+
+Closing the window only hides Sanita-share in the tray. New packages stop that tray on uninstall. If an icon is still there after remove, run:
+
+```bash
+pkill -x ufshare; pkill -x ufshared; pkill -x sanitashares
+systemctl --user disable --now ufshared.service 2>/dev/null || true
+rm -f ~/.local/share/applications/solutions.yomtech.sanitashares.desktop
+```
