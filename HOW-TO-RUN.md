@@ -29,11 +29,13 @@ sudo apt install --reinstall ./sanitashares_0.1.0_amd64.deb
 
 ## 4. Open
 
+The installer stops any old hidden Sanita-share window. Then:
+
 ```bash
 ufshare
 ```
 
-or double-click **Sanita-share** in the applications menu.
+or double-click **Sanita-share** in the applications menu. Home has **SEND**, **RECEIVE**, and **TEXT**. SEND has two boxes (**Drop files here** and **Select folder to send**) plus a green **Select files** button. TEXT waits for another machine on TEXT, then shows a scrollable **Send Text** box and a **Receive Text** box with a copy icon. Nearby devices show as chips; **QR** shows the LAN address. Closing the window keeps receiving from the tray. Language (ENGLISH / AMHARIC) and theme (Light / Dark icon buttons) are under the gear.
 
 If the window does not open:
 
@@ -48,6 +50,14 @@ systemctl --user enable --now ufshared.service
 ```bash
 ufshare
 ```
+
+If Connect finds the other computer but cannot join, on the machine that has **RECEIVE** open run:
+
+```bash
+sudo ufw allow 47621/tcp && sudo ufw allow 47622/udp
+```
+
+or `ufshare firewall` and approve the password prompt.
 
 ## 5. Remove
 
